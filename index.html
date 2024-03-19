@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+</head>
+<body>
+    <h1>Event Organizer</h1>
+
+    <h2>Add New Party</h2>
+    <form id="addParty">
+        <label for="name">Name:</label> 
+        <input type="text" id="name" required>
+        <br>
+
+        <label for="date">Date:</label> 
+        <input type="date" id="date" required>
+        <br>
+
+        <label for="time">Time:</label> 
+        <input type="time" id="time" required>
+        <br>
+
+        <label for="location">Location:</label> 
+        <input type="text" id="location" required>
+        <br>
+
+        <label for="description">Description:</label> 
+        <textarea id="description" required></textarea>
+        <br>
+
+        <button type="submit">Add Party</button> 
+    </form>
+
+    <h2>Parties List</h2>
+    <div id="parties"></div>
+
+    <script defer src="index.js"></script>
+</body>
+</html>
